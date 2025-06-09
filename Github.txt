@@ -1,0 +1,35 @@
+Mandando os arquivos para o repositório-
+
+# Vá até a pasta do seu projeto
+cd CAMINHO/DO/SEU/PROJETO
+
+# Inicializa o repositório (se ainda não tiver feito)
+git init
+
+# Adiciona todos os arquivos do projeto
+git add .
+
+# Cria o primeiro commit com uma mensagem
+git commit -m "Primeiro commit"
+
+# Conecta ao repositório do GitHub (substitua a URL pelo seu)
+git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
+
+# Envia os arquivos para o GitHub (apenas na primeira vez)
+git push -u origin main
+
+
+
+Atualizando o repositório
+
+# Verifica os arquivos modificados
+git status
+
+# Adiciona todos os arquivos alterados
+git add .
+
+# Cria um novo commit com uma mensagem
+git commit -m "Descreve o que foi alterado"
+
+# Envia para o GitHub
+git push
