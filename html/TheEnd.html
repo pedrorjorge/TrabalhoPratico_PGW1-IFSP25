@@ -25,9 +25,85 @@
 <div id="container">
 
     <main>
-        <section class="conteudo">
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum asperiores architecto ullam nihil tenetur voluptatem aspernatur pariatur sunt quae. Debitis enim dicta consectetur incidunt magni natus aut quidem eligendi quia.</p>
+
+        <section class="SobreJogo">
+            <h2 class="sobreOverWord"> Sobre o The End: </h2>
+                <p>
+                    O End é a última dimensão do Minecraft, cheia de mistérios, perigos e prêmios incríveis. Desde o indescritível dragão ender até a rara pedra do End, esse reino coloca as habilidades dos jogadores à prova.
+                </p>
         </section>
+        
+        <section>
+            <h2 class="MobsOverWord">Mobs mais comuns no mundo Over World: </h2>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Mobs</th>
+                        <th>Nível de Dificuldade</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Ender Dragon</td>
+                        <td>Alta dificuldade</td>
+                    </tr>
+                    <tr>
+                        <td>Enderman</td>
+                        <td>Média dificuldade</td>
+                    </tr>
+                    <tr>
+                        <td>Shulker</td>
+                        <td>Média dificuldade</td>
+                    </tr>
+                    <tr>
+                        <td>Wither</td>
+                        <td>Média dificuldade</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+        </section>
+
+        <section>
+            <h2>Mobs no Over World: </h2>
+
+                <div class="carousel-wrapper">
+                    <div class="arrow-left" onclick="scrollCarousel(-1)">&#10094;</div>
+                    <div class="arrow-right" onclick="scrollCarousel(1)">&#10095;</div>
+
+                    <div class="carousel" id="carousel">
+                        <div class="card">
+                            <img src="../img/Mobs/EnderDragon.jpg" alt="Ender Dragon">
+                            <p>Chefe final, grande desafio</p>
+                        </div>
+                        <div class="card">
+                            <img src="../img/Mobs/minecraftEnderman.jpg" alt="Enderman">
+                            <p>Evitável, mas perigoso em grupos</p>
+                        </div>
+                        <div class="card">
+                            <img src="../img/Mobs/shulker.png" alt="Shulker">
+                            <p>Causa levitação, complica quedas</p>
+                        </div>
+                        <div class="card">
+                            <img src="../img/Mobs/Phantom.jpg" alt="Phantom">
+                            <p>(Não nativo, mas relevante)</p>
+                        </div>
+                        <div class="card">
+                            <img src="../img/Mobs/Wither.jpg" alt="Wither">
+                            <p>Extremamente perigoso</p>
+                        </div>
+                </div>
+            </div>
+
+            <script>
+                function scrollCarousel(direction) {
+                const carousel = document.getElementById("carousel");
+                const scrollAmount = 340; // pixels (ajustado ao novo tamanho)
+                carousel.scrollBy({ left: scrollAmount * direction, behavior: "smooth" });
+                }
+            </script>
+        </section>
+
     </main>
 
     <footer class="rodape">

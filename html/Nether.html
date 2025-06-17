@@ -25,9 +25,98 @@
 <div id="container">
 
     <main>
-        <section class="conteudo">
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum asperiores architecto ullam nihil tenetur voluptatem aspernatur pariatur sunt quae. Debitis enim dicta consectetur incidunt magni natus aut quidem eligendi quia.</p>
+
+        <section class="SobreJogo">
+            <h2 class="sobreOverWord"> Sobre o Nether: </h2>
+                <p>
+                    O Nether é uma dimensão infernal e perigosa cheia de lava, fogo, fortalezas e biomas únicos. Ele é acessado por um portal do Nether feito com obsidiana. Diferente do Overworld, o Nether possui regras físicas próprias, como o fogo eterno, e nenhum ciclo de dia e noite.
+                    É uma área crucia l para a progressão no jogo: aqui se encontra blaze rods, nether wart, e outros recursos essenciais para poções e para encontrar o End.
+                </p>
         </section>
+        
+        <section>
+            <h2 class="MobsOverWord">Mobs mais comuns no mundo Nether: </h2>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Mobs</th>
+                        <th>Nível de Dificuldade</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Blaze</td>
+                        <td>Médio</td>
+                    </tr>
+                    <tr>
+                        <td>Wither Skeleton</td>
+                        <td>Médio ou alta</td>
+                    </tr>
+                    <tr>
+                        <td>Ghast</td>
+                        <td>Médio</td>
+                    </tr>
+                    <tr>
+                        <td>Magma Cube</td>
+                        <td>Baixo a grande</td>
+                    </tr>
+                    <tr>
+                        <td>Piglin</td>
+                        <td>Médio</td>
+                    </tr>
+                    <tr>
+                        <td>Strider</td>
+                        <td>Baixo</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+        </section>
+
+        <section>
+            <h2>Mobs no Over World: </h2>
+
+                <div class="carousel-wrapper">
+                    <div class="arrow-left" onclick="scrollCarousel(-1)">&#10094;</div>
+                    <div class="arrow-right" onclick="scrollCarousel(1)">&#10095;</div>
+
+                    <div class="carousel" id="carousel">
+                        <div class="card">
+                            <img src="../img/Mobs/Blaze.jpg" alt="Blaze">
+                            <p>Solta bolas de fogo, essencial para poções</p>
+                        </div>
+                        <div class="card">
+                            <img src="../img/Mobs/Wither Skeleton.jpeg" alt="Wither Skeleton">
+                            <p>Espada, envenenamento "Wither"</p>
+                        </div>
+                        <div class="card">
+                            <img src="../img/Mobs/ghast01.jpg" alt="Ghast">
+                            <p>Dispara bolas explosivas, flutua</p>
+                        </div>
+                        <div class="card">
+                            <img src="../img/Mobs/magma_cube.png" alt="Magma Cube">
+                            <p>Divide-se em cubos menores ao morrer</p>
+                        </div>
+                        <div class="card">
+                            <img src="../img/Mobs/piglin-in-the-nether.png" alt="Piglin">
+                            <p>Hostil se você não usar ouro</p>
+                        </div>
+                        <div class="card">
+                            <img src="../img/Mobs/strider.png"  alt="Strider">
+                            <p>Pode ser montado para andar na lava</p>
+                        </div>
+                </div>
+            </div>
+
+            <script>
+                function scrollCarousel(direction) {
+                const carousel = document.getElementById("carousel");
+                const scrollAmount = 340; // pixels (ajustado ao novo tamanho)
+                carousel.scrollBy({ left: scrollAmount * direction, behavior: "smooth" });
+                }
+            </script>
+        </section>
+
     </main>
 
     <footer class="rodape">

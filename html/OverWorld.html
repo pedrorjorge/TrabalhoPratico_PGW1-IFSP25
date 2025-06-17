@@ -14,7 +14,7 @@
         <div class="menu">
             <img src="../img/minecraftLogo.jpeg" alt="logo do minecraft" class="logo">
             <ul>
-                <li><a href="./index.html" class="menuLink">Home</a></li>
+                <li><a href="../index.html" class="menuLink">Home</a></li>
                 <li><a href="../html/SobreJogo.html" class="menuLink">Sobre o Jogo</a></li>
                 <li><a href="../html/SobreAutores.html" class="menuLink">Autores</a></li>
             </ul>
@@ -25,9 +25,91 @@
 <div id="container">
 
     <main>
-        <section class="conteudo">
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum asperiores architecto ullam nihil tenetur voluptatem aspernatur pariatur sunt quae. Debitis enim dicta consectetur incidunt magni natus aut quidem eligendi quia.</p>
+
+        <section class="SobreJogo">
+            <h2 class="sobreOverWord"> Sobre o Over World: </h2>
+                <p>
+                    Em Minecraft, o "Mundo Overworld" é a dimensão principal onde a maioria dos jogadores começa suas aventuras e onde a maior parte do jogo se desenrola. É um mundo tridimensional com diversos biomas, blocos e criaturas, e é a dimensão onde a exploração, construção e combate são mais frequentes. 
+                </p>
         </section>
+        
+        <section>
+            <h2 class="MobsOverWord">Mobs mais comuns no mundo Over World: </h2>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Mobs</th>
+                        <th>Nível de Dificuldade</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Zumbis</td>
+                        <td>Fácil</td>
+                    </tr>
+                    <tr>
+                        <td>Aranhas</td>
+                        <td>Fácil a Média</td>
+                    </tr>
+                    <tr>
+                        <td>Esqueletos</td>
+                        <td>Média a Difícil</td>
+                    </tr>
+                    <tr>
+                        <td>Creepers</td>
+                        <td>Média</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+        </section>
+
+        <section>
+            <h2>Mobs no Over World: </h2>
+
+                <div class="carousel-wrapper">
+                    <div class="arrow-left" onclick="scrollCarousel(-1)">&#10094;</div>
+                    <div class="arrow-right" onclick="scrollCarousel(1)">&#10095;</div>
+
+                    <div class="carousel" id="carousel">
+                        <div class="card">
+                            <img src="../img/Mobs/minecraftZombi.jpg" alt="Zumbi">
+                            <p>🧟 Zumbi – Lento, mas perigoso em grupo.</p>
+                        </div>
+                        <div class="card">
+                            <img src="../img/Mobs/SpiderMinecraft.webp" alt="Aranha">
+                            <p>🕷️ Aranha – Rápida e escaladora.</p>
+                        </div>
+                        <div class="card">
+                            <img src="../img/Mobs/Esqueleto Minecraft.jpg" alt="Esqueleto">
+                            <p>☠️ Esqueleto – Ataca à distância.</p>
+                        </div>
+                        <div class="card">
+                            <img src="../img/Mobs/Creeper Minecraft.png" alt="Esqueleto" alt="Creeper">
+                            <p>💣 Creeper – Explode silenciosamente!</p>
+                        </div>
+                </div>
+            </div>
+
+            <script>
+                function scrollCarousel(direction) {
+                const carousel = document.getElementById("carousel");
+                const scrollAmount = 340; // pixels (ajustado ao novo tamanho)
+                carousel.scrollBy({ left: scrollAmount * direction, behavior: "smooth" });
+                }
+            </script>
+        </section>
+
+        <section class="dicas">
+            <h1>Dicas para este mundo: </h1>
+            <ul>
+                <li>Ilumine bem suas construções.</li>
+                <li>Sempre durma para evitar mobs.</li>
+                <li>Crie muralhas ou portões para se proteger.</li>
+                <li>Cuidado ao explorar cavernas profundas - a escuridão torna isso letal.</li>
+            </ul>
+        </section>
+
     </main>
 
     <footer class="rodape">
