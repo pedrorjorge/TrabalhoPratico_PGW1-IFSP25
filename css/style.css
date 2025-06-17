@@ -1,8 +1,20 @@
+@charset "UTF-8";
+
 /*************Fonts Importadas*************/
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+/*************Estilos gerais*************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0px;
+}
+
 
 /*************body*************/
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url("/img/Home.jpeg");
@@ -47,8 +59,8 @@ body#theEnd {
 #bookmark ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
- margin: 0;
+  gap: 3rem;
+  margin: 0;
   padding: 0;
 }
 
@@ -65,24 +77,23 @@ body#theEnd {
   transition: all 0.3s ease;
 }
 
-.logo {
-  height: 50px;
-  width: 50px;
-  margin: 5px 10px 5px 10px;
-}
-
 .menu {
   display: flex;
   align-items: center;
   justify-content: right;
-  gap: 15px;
+  gap: 3rem;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
 }
 
 /*************Footer*************/
 
 .rodape {
   margin: 0px;
-  height: 10px;
+  height: 40px;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -123,7 +134,7 @@ div#container {
 .dimensao-link {
   text-align: center;
   text-decoration: none;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .dimensao-link:hover {
