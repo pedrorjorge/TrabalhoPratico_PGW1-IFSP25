@@ -55,33 +55,48 @@ h1 {
 #bookmark {
   position: fixed;
   top: 0;
-  right: 0;
   left: 0;
-  z-index: 1030;
-  background: linear-gradient(90deg, #4CAF50, #2E7D32);
-  padding: 5px;
+  right: 0;
+  height: 70px;
+  background: linear-gradient(90deg, #2E7D32, #4CAF50);
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 1030;
 }
 
 #bookmark ul {
   list-style: none;
   display: flex;
   gap: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+#bookmark li {
+  display: flex;
+  align-items: center;
 }
 
 #bookmark a {
   color: white;
-  text-decoration: none;
   font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1;
+  margin: 10px 0px 0px 0px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 #bookmark a:hover {
   color: #FFD700;
-  font-size: 1.05rem;
-  transform: scale(1.1);
-  transition: all 0.3s ease;
+  transform: scale(1.2);
 }
+
 
 .menu {
   display: flex;
@@ -98,11 +113,6 @@ h1 {
 /*************Footer*************/
 .rodape {
   height: 60px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
   background-color: #4E342E;
   color: #fff;
   padding: 1rem 2rem;
