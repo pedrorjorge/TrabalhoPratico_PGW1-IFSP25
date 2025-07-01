@@ -295,6 +295,7 @@ td:nth-child(3) {
 }
 
 /*************Responsivo*************/
+
 @media (max-width: 768px) {
   div#container {
     width: 95%;
@@ -367,7 +368,7 @@ td:nth-child(3) {
 .slides {
   display: flex;
   width: 100%;
-  animation: deslizar 10s infinite;
+  animation: deslizar 20s infinite;
 }
 
 .slides img {
@@ -385,4 +386,62 @@ td:nth-child(3) {
   66%  { transform: translateX(-200%); }
   91%  { transform: translateX(-200%); }
   100% { transform: translateX(0%); }
+}
+
+/* Formulário */
+form {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-family: Arial;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button,
+input[type="submit"] {
+  background-color: green;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: green;
+}
+
+.section-card p{
+  font-size: 20px;
+}
+
+.section-card ul li{
+  font-size: 20px;
 }
