@@ -198,7 +198,7 @@ div#container {
 .carousel-wrapper {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   overflow: hidden;
 }
 
@@ -267,13 +267,13 @@ div#container {
 /*************Tabela*************/
 table {
   border-collapse: collapse;
-  width: 80%;
+  width: 100%;
   margin: 20px auto;
   line-height: 2em;
 }
 
 table, td, th {
-  border: 1px solid black;
+  border: 0px solid black;
 }
 
 td {
